@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NLP Study Course</title>
+<meta name="description" content="Practitioner-level NLP study notes: techniques, scripts, practice tasks and self-tests.">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem("nlp-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="topbar">
+  <button id="menuBtn" class="icon-btn" aria-label="Open menu">☰</button>
+  <a href="#/" class="brand" id="brand">NLP Study Course</a>
+  <div class="search-wrap">
+    <input id="search" type="search" placeholder="Search all notes…" autocomplete="off" aria-label="Search">
+    <div id="results" class="results" hidden></div>
+  </div>
+  <button id="themeBtn" class="icon-btn" aria-label="Toggle dark mode">◐</button>
+</header>
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Chapters"></nav>
+  <div id="scrim" class="scrim" hidden></div>
+  <main id="main" class="main" tabindex="-1">
+    <article id="content" class="content"><p class="loading">Loading…</p></article>
+    <nav id="pager" class="pager"></nav>
+  </main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

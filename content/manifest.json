@@ -1,0 +1,221 @@
+{
+  "title": "NLP Study Course",
+  "subtitle": "Practitioner-level study notes: techniques, scripts, practice tasks and self-tests",
+  "modules": [
+    {
+      "title": "Foundations: Frames, Principles & Guidelines",
+      "pages": [
+        {
+          "id": "ch01",
+          "title": "1. The Principles of NLP",
+          "file": "content/course/ch01.md"
+        },
+        {
+          "id": "ch02",
+          "title": "2. The Vision–Alignment–Strategy Model",
+          "file": "content/course/ch02.md"
+        },
+        {
+          "id": "ch03",
+          "title": "3. History of NLP",
+          "file": "content/course/ch03.md"
+        },
+        {
+          "id": "ch04",
+          "title": "4. The Three Brains",
+          "file": "content/course/ch04.md"
+        },
+        {
+          "id": "ch05",
+          "title": "5. The 3 Power Questions & Holy Trinity of Results",
+          "file": "content/course/ch05.md"
+        },
+        {
+          "id": "ch06",
+          "title": "6. Criteria for Creating Outcomes",
+          "file": "content/course/ch06.md"
+        },
+        {
+          "id": "ch07",
+          "title": "7. The 7 Human Needs",
+          "file": "content/course/ch07.md"
+        }
+      ]
+    },
+    {
+      "title": "Communication Mastery",
+      "pages": [
+        {
+          "id": "ch08",
+          "title": "8. The 4 Pillars of Outstanding Communication",
+          "file": "content/course/ch08.md"
+        },
+        {
+          "id": "ch09",
+          "title": "9. Sensory Acuity",
+          "file": "content/course/ch09.md"
+        },
+        {
+          "id": "ch10",
+          "title": "10. Rapport",
+          "file": "content/course/ch10.md"
+        },
+        {
+          "id": "ch11",
+          "title": "11. Chunking",
+          "file": "content/course/ch11.md"
+        },
+        {
+          "id": "ch12",
+          "title": "12. Metaphors",
+          "file": "content/course/ch12.md"
+        },
+        {
+          "id": "ch13",
+          "title": "13. Frames",
+          "file": "content/course/ch13.md"
+        },
+        {
+          "id": "ch14",
+          "title": "14. Questions to Customise Results",
+          "file": "content/course/ch14.md"
+        },
+        {
+          "id": "ch15",
+          "title": "15. Representational Systems & Predicates",
+          "file": "content/course/ch15.md"
+        },
+        {
+          "id": "ch16",
+          "title": "16. Linguistic Presuppositions",
+          "file": "content/course/ch16.md"
+        },
+        {
+          "id": "ch17",
+          "title": "17. Hypnotic Language Patterns (Milton Model)",
+          "file": "content/course/ch17.md"
+        },
+        {
+          "id": "ch18",
+          "title": "18. The Clarity Model (Meta Model)",
+          "file": "content/course/ch18.md"
+        },
+        {
+          "id": "ch19",
+          "title": "19. Reframing: Meaning & Context Reframes",
+          "file": "content/course/ch19.md"
+        }
+      ]
+    },
+    {
+      "title": "Emotional Mastery",
+      "pages": [
+        {
+          "id": "ch20",
+          "title": "20. Emotional Mastery: Overview",
+          "file": "content/course/ch20.md"
+        },
+        {
+          "id": "ch21",
+          "title": "21. Anchoring",
+          "file": "content/course/ch21.md"
+        },
+        {
+          "id": "ch22",
+          "title": "22. State Elicitation (and ITURN)",
+          "file": "content/course/ch22.md"
+        },
+        {
+          "id": "ch23",
+          "title": "23. Precision Anchoring",
+          "file": "content/course/ch23.md"
+        },
+        {
+          "id": "ch24",
+          "title": "24. Neural Bridge (Chain of Anchors)",
+          "file": "content/course/ch24.md"
+        },
+        {
+          "id": "ch25",
+          "title": "25. Collapse Anchor",
+          "file": "content/course/ch25.md"
+        }
+      ]
+    },
+    {
+      "title": "Behavioural Change",
+      "pages": [
+        {
+          "id": "ch26",
+          "title": "26. Behavioural Change: Overview & Submodalities",
+          "file": "content/course/ch26.md"
+        },
+        {
+          "id": "ch27",
+          "title": "27. Like to Dislike (Response Repatterning)",
+          "file": "content/course/ch27.md"
+        },
+        {
+          "id": "ch28",
+          "title": "28. Momentum Pattern (Swish Pattern)",
+          "file": "content/course/ch28.md"
+        }
+      ]
+    },
+    {
+      "title": "Belief Change",
+      "pages": [
+        {
+          "id": "ch29",
+          "title": "29. Belief Change",
+          "file": "content/course/ch29.md"
+        },
+        {
+          "id": "ch30",
+          "title": "30. Belief Change: Worked Examples",
+          "file": "content/course/ch30.md"
+        },
+        {
+          "id": "ch31",
+          "title": "31. Parts Integration",
+          "file": "content/course/ch31.md"
+        },
+        {
+          "id": "ch32",
+          "title": "32. Emotional Release Technique (ERT)",
+          "file": "content/course/ch32.md"
+        }
+      ]
+    },
+    {
+      "title": "My Notes",
+      "pages": [
+        {
+          "id": "my-notes",
+          "title": "How to add your own notes",
+          "file": "content/my-notes/how-to-add-notes.md"
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "pages": [
+        {
+          "id": "all-tasks-checklist",
+          "title": "All Practice Tasks",
+          "file": "content/course/all-tasks-checklist.md"
+        },
+        {
+          "id": "quick-revision-sheet",
+          "title": "Quick Revision Sheet",
+          "file": "content/course/quick-revision-sheet.md"
+        },
+        {
+          "id": "glossary",
+          "title": "Glossary",
+          "file": "content/course/glossary.md"
+        }
+      ]
+    }
+  ]
+}

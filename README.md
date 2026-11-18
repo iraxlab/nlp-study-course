@@ -40,6 +40,12 @@ Then open <http://localhost:8000>.
 
 New pages show up in the menu and in search automatically. The site's own page **My Notes → How to add your own notes** shows the coloured boxes, tick-box tasks and self-test questions you can copy.
 
+## The PDF Library
+
+The menu has a **PDF Library** page that links to the original course PDFs in the `pdfs/` folder: the full workbook (also split into two parts) and the slides for each technique.
+
+These PDFs are the course's own material and include its branding and trainer details. Keep the repository **private** so you're not republishing paid course content. GitHub Pages works on private repositories with a paid plan (GitHub Pro or Team). On a free account, either leave the `pdfs/` folder out of a public repo or keep the whole site private and preview it locally.
+
 ## Folder layout
 
 ```
@@ -49,6 +55,8 @@ assets/app.js              menu, search, progress, tick boxes
 content/manifest.json      the menu: modules and pages, in order
 content/course/            the 32 course chapters plus reference pages
 content/my-notes/          your own pages and the template
+content/pdfs/library.md    the PDF Library page
+pdfs/                      the course PDFs
 ```
 
 ## Features

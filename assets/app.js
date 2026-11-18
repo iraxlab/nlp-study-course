@@ -27,7 +27,7 @@
       html += '<div class="mod"><div class="mod-title">' + m.title + "</div>";
       m.pages.forEach(function (p) {
         total++; if (done[p.id]) count++;
-        html += '<a href="#/' + p.id + '" data-id="' + p.id + '" class="' + (done[p.id] ? "done" : "") + '"><span class="dot"></span><span>' + p.title + "</span></a>";
+        html += '<a href="#' + p.id + '" data-id="' + p.id + '" class="' + (done[p.id] ? "done" : "") + '"><span class="dot"></span><span>' + p.title + "</span></a>";
       });
       html += "</div>";
     });
@@ -45,7 +45,7 @@
     document.title = manifest.title;
     var cards = manifest.modules.map(function (m) {
       var first = m.pages[0];
-      return '<a class="card" href="#/' + first.id + '"><h3>' + m.title + "</h3><p>" + m.pages.length + " page" + (m.pages.length > 1 ? "s" : "") + " · starts with " + first.title.replace(/^\d+\.\s*/, "") + "</p></a>";
+      return '<a class="card" href="#' + first.id + '"><h3>' + m.title + "</h3><p>" + m.pages.length + " page" + (m.pages.length > 1 ? "s" : "") + " · starts with " + first.title.replace(/^\d+\.\s*/, "") + "</p></a>";
     }).join("");
     $("#content").innerHTML =
       '<section class="hero"><h1>' + manifest.title + '</h1><p class="subtitle">' + manifest.subtitle + "</p>" +
@@ -96,7 +96,7 @@
 
   function show(id, anchor) {
     var i = pages.findIndex(function (p) { return p.id === id; });
-    if (i < 0) { $("#content").innerHTML = "<h1>Not found</h1><p>No page called “" + id + "”. <a href='#/'>Go home</a>.</p>"; return; }
+    if (i < 0) { $("#content").innerHTML = "<h1>Not found</h1><p>No page called “" + id + "”. <a href='#'>Go home</a>.</p>"; return; }
     var p = pages[i];
     $("#content").innerHTML = '<p class="loading">Loading…</p>';
     load(p.file).then(function (md) {
@@ -105,8 +105,8 @@
       enhance(id);
       var prev = pages[i - 1], next = pages[i + 1];
       $("#pager").innerHTML =
-        (prev ? '<a class="prev" href="#/' + prev.id + '"><small>← Previous</small>' + prev.title + "</a>" : "") +
-        (next ? '<a class="next" href="#/' + next.id + '"><small>Next →</small>' + next.title + "</a>" : "");
+        (prev ? '<a class="prev" href="#' + prev.id + '"><small>← Previous</small>' + prev.title + "</a>" : "") +
+        (next ? '<a class="next" href="#' + next.id + '"><small>Next →</small>' + next.title + "</a>" : "");
       markCurrent(id);
       var target = anchor && document.getElementById(anchor);
       if (target) target.scrollIntoView(); else window.scrollTo(0, 0);
@@ -119,8 +119,8 @@
     closeMenu();
     var h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
     if (!h) return home();
-    var parts = h.split("::");
-    show(parts[0], parts[1]);
+    var cut = h.indexOf("--");
+    show(cut > 0 ? h.slice(0, cut) : h, cut > 0 ? h : null);
   }
 
   /* ---------- search ---------- */
@@ -159,8 +159,8 @@
       box.innerHTML = hits.map(function (h) {
         var t = h.s.t, at = t.toLowerCase().indexOf(terms[0]);
         var snip = (at > 60 ? "…" : "") + t.slice(Math.max(0, at - 60), at + 120) + "…";
-        var anchor = h.s.h ? "::" + h.s.page.id + "--" + h.s.h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") : "";
-        return '<a href="#/' + h.s.page.id + anchor + '"><div class="r-title">' + esc(h.s.page.title) + (h.s.h && h.s.h !== h.s.page.title ? " › " + esc(h.s.h) : "") + '</div><div class="r-snip">' + esc(snip).replace(re, "<mark>$1</mark>") + "</div></a>";
+        var anchor = h.s.h ? "--" + h.s.h.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") : "";
+        return '<a href="#' + h.s.page.id + anchor + '"><div class="r-title">' + esc(h.s.page.title) + (h.s.h && h.s.h !== h.s.page.title ? " › " + esc(h.s.h) : "") + '</div><div class="r-snip">' + esc(snip).replace(re, "<mark>$1</mark>") + "</div></a>";
       }).join("");
       box.hidden = false;
     });

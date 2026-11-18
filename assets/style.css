@@ -26,7 +26,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16.5px;line-height:1.6}
 a{color:var(--accent)}
-.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;gap:12px;height:56px;padding:0 16px;background:var(--panel);border-bottom:1px solid var(--line)}
 .brand{font-weight:700;text-decoration:none;color:var(--text);white-space:nowrap;font-size:1.05rem}
 .icon-btn{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:8px;width:36px;height:36px;font-size:18px;cursor:pointer;flex:none}
 #menuBtn{display:none}
@@ -106,3 +106,12 @@ blockquote,.quote{margin:1em 0;padding:8px 18px;border-left:3px solid var(--line
 }
 @media (max-width:520px){ .brand{display:none} .pager{flex-direction:column} .pager a{max-width:none} }
 @media print{ .topbar,.sidebar,.pager,.studied{display:none} .main{padding:0} }
+.pdf-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin:.6em 0 1.4em}
+.pdf-card{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:var(--radius);padding:14px;background:var(--panel);text-decoration:none;color:var(--text)}
+.pdf-card:hover{border-color:var(--accent)}
+.pdf-card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pdf-icon{flex:none;width:40px;height:48px;border-radius:6px;background:var(--todo-bg);color:var(--todo);font-weight:800;font-size:.72rem;display:flex;align-items:center;justify-content:center;letter-spacing:.04em}
+.pdf-body{display:flex;flex-direction:column;gap:3px;min-width:0}
+.pdf-body b{font-size:.95rem;line-height:1.3}
+.pdf-meta{font-size:.83rem;color:var(--muted);line-height:1.35}
+.pdf-ch{font-size:.78rem;color:var(--accent);font-weight:600}

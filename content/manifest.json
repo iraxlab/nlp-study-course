@@ -188,6 +188,16 @@
       ]
     },
     {
+      "title": "PDF Library",
+      "pages": [
+        {
+          "id": "pdfs",
+          "title": "Course PDFs",
+          "file": "content/pdfs/library.md"
+        }
+      ]
+    },
+    {
       "title": "My Notes",
       "pages": [
         {
